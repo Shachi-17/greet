@@ -20,10 +20,15 @@
         </div>
     </div>
 
+    <audio id="openSound" src="audio.MP3"></audio> 
+
     <script>
         const envelope = document.getElementById('envelope');
+        const openSound = document.getElementById('openSound');
+
         envelope.addEventListener('click', () => {
             envelope.classList.toggle('open');
+            openSound.play();
         });
     </script>
 </body>
